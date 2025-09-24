@@ -1,0 +1,26 @@
+[package]
+name = "gemini-translator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.32.3"
+egui = "0.32.3"
+
+screenshots = "0.8.10"
+
+reqwest = { version = "0.12.23", features = ["json"] }
+tokio = { version = "1.47.1", features = ["full"] }
+
+serde = { version = "1.0.226", features = ["derive"] }
+serde_json = "1.0.145"
+
+image = "0.25.8"
+imageproc = "0.25.0"
+
+anyhow = "1.0.100"
+thiserror = "2.0.16"
+
+chrono = { version = "0.4.42", features = ["serde"] }
+tracing = "0.1.41"
+dirs = "6.0.0"
