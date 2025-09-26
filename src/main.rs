@@ -1,10 +1,6 @@
-mod gui;
-mod screen_capture;
 mod api;
+mod gui;
 
-#[tokio::main]
-async fn main() {
-    gui::main();
-    screen_capture::main();
-    api::main().await.expect("TODO: panic message");
+fn main() {
+    gui::init_gemini();
 }
